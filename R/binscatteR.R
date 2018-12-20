@@ -26,6 +26,7 @@ binscatter <- function(data = NULL, x = NULL, y = NULL, weights = NULL,
   require(ggplot2)
   require(dplyr)
   require(Hmisc)
+  require(tidyverse)
 
   #check inputs
   if (is.null(data)) {
