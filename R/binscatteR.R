@@ -51,7 +51,7 @@ binscatter <- function(data = NULL, x = NULL, y = NULL, weights = NULL,
   data <- as.data.frame(data)
 
   #check if x is continuous
-  if(length(unique(data[,x]))/length(data[,x]) == 1){
+  if(length(unique(data[,x]))/length(data[,x]) >= 0.8){
     is_continuous <- TRUE
   }else{
     is_continuous <- FALSE
